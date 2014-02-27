@@ -1,0 +1,61 @@
+
+<form class="form-horizontal"  ng-submit="ajoutUtilisateur()">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Création de compte</legend>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="pseudo">Pseudo</label>
+  <div class="controls">
+    <input id="pseudo" name="pseudo" type="text" placeholder="" class="input-xlarge" required="" ng-model="utilisateur.pseudo">
+    
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="mail">Email</label>
+  <div class="controls">
+    <input id="mail" name="mail" type="text" placeholder="" class="input-xlarge" required="" ng-model="utilisateur.mail" > 
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="control-group">
+  <label class="control-label" for="pass">Mot de passe</label>
+  <div class="controls">
+    <input id="pass" name="pass" type="password" placeholder="" class="input-xlarge" required="" ng-model="utilisateur.pwd">
+    
+  </div>
+</div>
+<!-- Password  confirm input-->
+<div class="control-group">
+  <label class="control-label" for="pass">Confirmation</label>
+  <div class="controls">
+    <input id="pass_confirmation" name="pass" type="password" placeholder="" class="input-xlarge" required="" ng-model="utilisateur.pwd2">
+    
+  </div>
+</div>
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="about">A quoi pensez vous en ce moment ?</label>
+  <div class="controls">
+    <input id="about" name="about" type="text" placeholder="" class="input-xlarge" ng-model="utilisateur.about">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="control-group">
+  <label class="control-label" for="enregistrement_utilisateur"></label>
+  <div class="controls">
+    <button id="enregistrement_utilisateur"  name="enregistrement_utilisateur" class="btn btn-primary">Inscription</button>
+  </div>
+</div>
+
+</fieldset>
+</form>

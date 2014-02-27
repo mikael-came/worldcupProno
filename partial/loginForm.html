@@ -1,0 +1,34 @@
+
+<form class="form-horizontal"  ng-submit="login()">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Login : </legend>
+
+<!-- Text input-->
+
+      <div class="control-group">
+        <label class="control-label" for="pseudo">Pseudo</label>
+        <div class="controls">
+          <input id="pseudo" name="pseudo" type="text" placeholder="" class="input" required="" ng-model="utilisateur.pseudo">
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="pass">Mot de passe</label>
+        <div class="controls">
+          <input id="pass" name="pass" type="password" placeholder="" class="input" required="" ng-model="utilisateur.pwd">
+          
+        </div>
+      </div>
+
+    <!-- Button -->
+    <div class="control-group">
+      <label class="control-label" for="enregistrement_utilisateur"></label>
+      <div class="controls">
+        <button id="enregistrement_utilisateur"  name="enregistrement_utilisateur" class="btn btn-primary">se connecter</button>
+      </div>
+    </div>
+
+</fieldset>
+</form>

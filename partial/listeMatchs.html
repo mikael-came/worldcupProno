@@ -1,0 +1,25 @@
+<div class="hero-unit"> <h1>liste des matchs :</h1></div>
+<div class="span10" ng-repeat="matchByGroupe in matchsToFilter() | filter:filterGroupe">
+	 <H2>{{matchByGroupe.nom_groupe}}</H2>
+	
+	  <table class="table span10">
+	  <thead>
+	   
+	      <th class="text-center">Date</th>
+	      <th class="text-center">match</th>
+	        <th class="text-center">groupe</th>
+	   </thead>
+	   <tbody>
+	      <tr class="text-center" ng-repeat="match in matchs | filter:{nom_groupe: matchByGroupe.nom_groupe}">
+	          <td>{{match.date | date:'yyyy/MM-dd HH:mm'}}</td>
+	          <td> {{match.equipe1}} VS {{match.equipe2}}</td>
+	          <td>{{match.nom_groupe}}</td>
+	      </tr>
+	    </tbody>  
+	  </table>
+	
+</div>	
+
+
+ 
+ 

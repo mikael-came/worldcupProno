@@ -1,0 +1,19 @@
+Ajoutons un match
+<div >
+<form  class="form-horizontal">
+
+	<input type="text"
+       ng-model="string">
+	<select ng-model="equipe_1" ng-options="equipe.nom_equipe for equipe in equipes"></select><br>
+ 	contre 
+	<select ng-model="equipe_2" ng-options="equipe.nom_equipe for equipe in equipes"></select><br>
+ 
+</div>
+
+<!-- Button -->
+
+
+</form>
+ <button ng-click="submitForm()" ng-init="count=0">
+      ajouter match
+  </button>

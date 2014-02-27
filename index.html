@@ -1,0 +1,70 @@
+<!doctype html>
+<!--[if lte IE 7]> <html class="no-js ie67 ie678" lang="fr"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 ie678" lang="fr"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9" lang="fr"> <![endif]-->
+<!--[if gt IE 9]> <!--><html class="no-js" lang="fr"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+		<title>mikael World Cup</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		 <!-- Bootstrap -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <script src="./lib/angular/angular.js"></script>
+     <script src="./lib/angular/angular-route.js"></script>
+     <script src="./lib/angular/angular-resource.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  	<script src="./js/app.js"></script>
+    <script src="./js/user_controler.js"></script>
+    <script src="./js/matchs_controler.js"></script>
+	<script src="./js/competitions_controler.js"></script>
+</head>
+<body ng-app="worldCupApp">
+	
+	<header id="header" role="banner" class="line pam">
+		
+		<header class="jumbotron subhead" id="overview">
+    		<div class="row">
+	    		<div class="span6">
+	    		  <h1>My world cup</h1>
+	    		 
+	    		</div>
+    		</div>
+    	</header>
+
+	</header>
+
+	<div class="row">
+		<aside class="span3 aside">
+				<nav id="navigation" role="navigation">
+					
+					<ul class="pas txtcenter">
+						<li class="txtcenter pas">tableau final du brésil</li>
+			  			<li class="pam"><a href="#/competition/1">Liste des matchs de la CDM</a></li>
+			  			<li class="pam"><a href="#/matchs">Liste des equipes</a></li>
+			  			<li class="pam"><a href="#/competitions">Selectionner une compétition</a></li>
+			  			<li class="pam"><a href="#/signin">Inscription</a></li>
+			    		<li class="pam">Groupe A</li>
+			    	
+			    		<li class="pam"><a href="#/signin">enregistement</a></li>
+
+			    		<li class="pam"><a href="#/login">login</a></li>
+
+		    		</ul>
+	    		</nav>
+		</aside> 
+    	
+         <div class="span8">
+		  
+			 <div ng-view></div>
+		</div>
+	</div>
+
+	<footer id="footer" role="contentinfo" class="line txtcenter w100 pa0 ma0">
+		footer !
+	</footer>
+
+</body>
+</html>
